@@ -1172,7 +1172,20 @@ function buildStandaloneHTML(data) {
     .ti-product-card.theme-dark .ti-card-image{background:#1e2729}
     .ti-product-card.layout-stacked .ti-card-image{height:220px}
     .ti-product-card.layout-stacked .ti-card-body{padding:28px 32px}
-    @media(max-width:520px){
+    @media(prefers-color-scheme:dark){
+      body{background:#2F3538}
+      .ti-product-card{background:#2F3538}
+      .ti-card-body{background:#2F3538}
+      .ti-card-image{background:#1e2729}
+      .ti-card-title{color:#FFFFFF}
+      .ti-card-description{color:#8D9395}
+      .ti-card-price{color:#FFFFFF}
+      .ti-card-price-note{color:#6a7478}
+      .ti-card-cta{background:#F32A52}
+      .ti-card-cta:hover{background:#d4203f}
+      .ti-card-eyebrow{color:#F32A52}
+    }
+        @media(max-width:520px){
       .ti-product-card:not(.layout-stacked){grid-template-columns:1fr;grid-template-rows:200px 1fr}
       .ti-card-body{padding:20px 24px}
       .ti-card-title{font-size:22px}
